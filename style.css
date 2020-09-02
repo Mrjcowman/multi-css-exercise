@@ -17,6 +17,18 @@ h1 {
 
 img {
     width: 100%;
+    border-radius: 10pt;
+    box-shadow: 0 0 3pt 0 black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-text-stroke: inherit;
+}
+
+p {
+    font-size: 16pt;
 }
 
 .subtitle {
@@ -27,31 +39,41 @@ img {
     position: relative;
     height: 0;
 
-    padding-bottom: 100%;
+    margin: 1em 0;
+    padding-bottom: 66.7%;
 }
 
 .hero {
     width: 30%;
     height: 0;
     padding-bottom: 30%;
+    
+    border-radius: 100%;
 
     background-color: black;
     position: absolute;
 
+    box-shadow: 0 0 5pt black;
+
     transform: translate(-50%, -50%);
 
-    transition: width 0.5s, padding-bottom 0.5s;
+    transition: width 0.5s, padding-bottom 0.5s, box-shadow 0.5s;
+
+    z-index: 1;
 }
 
 .hero:hover {
     width: 40%;
     padding-bottom: 40%;
 
+    box-shadow: 0 0 8pt 2pt black;
+
+    z-index: 2;
 }
 
 #cat1 {
     left: 15%;;
-    top: 15%;
+    top: 25%;
 
     background-image: url(http://placekitten.com/1024/1024);
     background-size: 40vw;
@@ -59,7 +81,7 @@ img {
 }
 
 #cat2 {
-    top: 15%;
+    top: 25%;
     left: 50%;
 
     background-image: url(http://placekitten.com/512/512);
@@ -68,7 +90,7 @@ img {
 }
 
 #cat3 {
-    top: 15%;
+    top: 25%;
     left: 85%;
 
     background-image: url(http://placekitten.com/800/800);
@@ -78,7 +100,7 @@ img {
 
 #cat4 {
     left: 15%;;
-    top: 50%;
+    top: 75%;
 
     background-image: url(http://placekitten.com/1400/1400);
     background-size: 40vw;
@@ -86,7 +108,7 @@ img {
 }
 
 #cat5 {
-    top: 50%;
+    top: 75%;
     left: 50%;
 
     background-image: url(http://placekitten.com/511/511);
@@ -95,7 +117,7 @@ img {
 }
 
 #cat6 {
-    top: 50%;
+    top: 75%;
     left: 85%;
 
     background-image: url(http://placekitten.com/2000/2000);
